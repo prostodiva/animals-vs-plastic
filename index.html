@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Animals vs. Plastic</title>
+        <link rel="stylesheet" href="styles.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <a href="index.html" class="brand">Animals vs. Plastic</a>
+            <button class="menu-btn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="main-nav">☰</button>
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="copyrights.html">Copyrights</a></li>
+                    <li><a href="history.html">History</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+            </nav>
+            <a href="donate.html" class="donate">Donate</a>
+        </header>
+        <main>
+            <section class="hero">
+                <img src="images/hero.png" alt="A turtle is swimming in the ocean">
+                <div class="hero-content">
+                    <h1>The Ocean Isn't a <span>Trash Can</span></h1>
+                    <p>Plastic doesn't just <strong>disappear</strong>. It <strong>harms</strong> marine life <span>- from sea turtles to penguins - and it affects the</span> ocean we all depend on.</p>
+                    <div class="hero-donate">
+                        <span>Save A Turtle</span>
+                        <a href="donate.html">DONATE</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="stats">
+                <div class="stats-content">
+                    <p class="eyebrow">THE PROBLEM</p>
+                    <h2>Plastic Doesn't Just Disappear</h2>
+                    <p>Every year, millions of tons of plastic flow from our cities and rivers into the ocean. Sunlight and waves don't destroy it — they shatter it into smaller and smaller pieces.</p>
+                    <div class="stat">
+                        <span class="stat-number">8M+</span>
+                        <span class="stat-label">tons of plastic enter the ocean every year</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">52%</span>
+                        <span class="stat-label">of sea turtles have ingested plastic debris</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">100K+</span>
+                        <span class="stat-label">marine animals die from entanglement each year</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">2050</span>
+                        <span class="stat-label">the year plastic could outweigh fish in the ocean</span>
+                    </div>
+                </div>
+            </section>
+            <section class="choices">
+                <div class="choices-content">
+                    <h2>What you can do</h2>
+                    <p>Small choices, multiplied by millions of people, become an ocean-sized change.</p>
+                    <span class="choices-arrow" aria-hidden="true">↓</span>
+                    <ol class="items">
+                        <li>Use fewer single-use plastics.</li>
+                        <li>Reuse bags, bottles, and containers.</li>
+                        <li>Dispose of plastic responsibly.</li>
+                        <li>Pick up plastic when you see it.</li>
+                        <li>Think before you buy.</li>
+                    </ol>
+                </div>
+            </section>
+            <section class="pledge">
+                <div class="pledge-content">
+                    <div class="pledge-head">
+                        <h2>
+                            <span class="pledge-line-1">READY</span>
+                            <span class="pledge-line-2">TO HELP?</span>
+                        </h2>
+                        <button type="button" class="pledge-btn">I take the pledge <span class="pledge-arrow" aria-hidden="true">→</span></button>
+                    </div>
+                    <p>Join <span id="pledge-count">1,247</span> people who already pledged</p>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="footer-content">
+                <div class="footer-top">
+                    <p class="footer-tagline">
+                        <span>Small Choices. Ocean-Sized</span>
+                        <span>Change.</span>
+                    </p>
+                    <div class="footer-giant">
+                        <p class="footer-thanks">THANK</p>
+                        <p class="footer-note">A STUDENT PROJECT FOR OUR OCEANS</p>
+                        <p class="footer-you">YOU</p>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <div class="footer-contact">
+                        <p class="footer-questions">
+                            <span>Questions About The Project?</span>
+                            <span>Let's Get In Touch.</span>
+                        </p>
+                        <form class="footer-form" id="footer-form">
+                            <label class="visually-hidden" for="footer-email">Email</label>
+                            <input type="email" id="footer-email" placeholder="Email">
+                            <button type="submit" class="footer-arrow" aria-label="Send email">→</button>
+                        </form>
+                        <p class="footer-msg" id="footer-msg" aria-live="polite"></p>
+                    </div>
+                    <a href="#top" class="back-to-top">Back To Top <span aria-hidden="true">↕</span></a>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
