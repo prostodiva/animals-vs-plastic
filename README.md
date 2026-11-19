@@ -31,12 +31,12 @@ No frameworks, no libraries, no build step.
 
 | Page          | Status      |
 | ------------- | ----------- |
-| Home (index)  | ✅ Built    |
+| Home (index)  | Built    |
 | About         | In progress |
 | Contact       | In progress |
 | Copyrights    | In progress |
 | History       | In progress |
-| FAQ           | In progress |
+| FAQ           | Built |
 | Donate        | In progress |
 
 ## Project structure
