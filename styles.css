@@ -497,7 +497,7 @@ footer {
     white-space: nowrap;
 }
 
-main h1 {
+.page-title {
     font-family: Impact;
     font-size: clamp(40px, 6vw, 72px);
     font-weight: 400;
