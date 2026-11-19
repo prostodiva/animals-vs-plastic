@@ -19,3 +19,24 @@ if (pledgeBtn && pledgeCount) {
         pledgeBtn.disabled = true;
     });
 }
+
+// Accordion (FAQ page)
+const buttons = document.querySelectorAll('.accordion button');
+buttons.forEach((button) => {
+    button.addEventListener('click', () => {
+        // 1. Remember whether THIS one was open — before touching anything
+        const wasExpanded = button.getAttribute('aria-expanded') === 'true';
+
+        // 2. Close everything, no exceptions
+        buttons.forEach((other) => {
+            other.setAttribute('aria-expanded', 'false');
+            document.getElementById(other.getAttribute('aria-controls')).hidden = true;
+        });
+
+        // 3. Open the clicked one — but only if it wasn't already open
+        if (!wasExpanded) {
+            button.setAttribute('aria-expanded', 'true');
+            document.getElementById(button.getAttribute('aria-controls')).hidden = false;
+        }
+    });
+});

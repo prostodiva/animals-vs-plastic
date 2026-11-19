@@ -497,6 +497,73 @@ footer {
     white-space: nowrap;
 }
 
+main h1 {
+    font-family: Impact;
+    font-size: clamp(40px, 6vw, 72px);
+    font-weight: 400;
+    color: #444B3C;
+    text-align: center;
+    margin: 0;
+    padding: 64px 24px 40px;
+}
+
+.accordion {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 24px 96px;
+}
+
+.accordion > div {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.question {
+    margin: 0;
+}
+
+.accordion button {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 24px;
+    font-weight: 600;
+    color: #444B3C;
+    text-align: left;
+    padding: 24px 8px;
+}
+
+.accordion button::after {
+    content: "+";
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.accordion button[aria-expanded="true"]::after {
+    content: "−";
+}
+
+.accordion button:hover {
+    background-color: rgba(126, 176, 129, 0.12);
+}
+
+.accordion section {
+    padding: 0 8px 24px;
+}
+
+.answer {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #333;
+    margin: 0;
+    max-width: 700px;
+}
+
 
 @media (max-width: 768px) {
     header {
@@ -650,6 +717,15 @@ footer {
     .footer-tagline,
     .footer-questions {
         font-size: 20px;
+    }
+
+    .accordion button {
+        font-size: 19px;
+        padding: 18px 4px;
+    }
+
+    .answer {
+        font-size: 16px;
     }
 }
 

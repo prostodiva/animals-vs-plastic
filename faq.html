@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Animals vs. Plastic</title>
+        <link rel="stylesheet" href="styles.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <a href="index.html" class="brand">Animals vs. Plastic</a>
+            <button class="menu-btn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="main-nav">☰</button>
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="copyrights.html">Copyrights</a></li>
+                    <li><a href="history.html">History</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+            </nav>
+            <a href="donate.html" class="donate">Donate</a>
+        </header>
+        <main>
+            <h1>Frequently Asked Questions</h1>
+            <div class="accordion">
+                <div>
+                    <h2 class="question">
+                        <button id="btn1" type="button" aria-expanded="false" aria-controls="panel1">Why is plastic so dangerous for ocean animals?</button>
+                    </h2>
+                    <section id="panel1" aria-labelledby="btn1" hidden>
+                        <p class="answer">Animals mistake plastic for food and eat it, which can block their stomachs and starve them. Others get tangled in bags, nets, and fishing line and cannot swim, hunt, or surface to breathe. Plastic also damages the habitats animals depend on - from coral reefs to nesting beaches.</p>
+                    </section>
+                </div>
+
+                <div>
+                    <h2 class="question">
+                        <button id="btn2" type="button" aria-expanded="false" aria-controls="panel2">How long does plastic stay in the ocean?</button>
+                    </h2>
+                    <section id="panel2" aria-labelledby="btn2" hidden>
+                        <p class="answer">Plastic does not biodegrade. A plastic bottle can last around 450 years in the ocean. Sunlight and waves only break it into smaller and smaller pieces - it never truly goes away.</p>
+                    </section>
+                </div>
+
+                <div>
+                    <h2 class="question">
+                        <button id="btn3" type="button" aria-expanded="false" aria-controls="panel3">What are microplastics?</button>
+                    </h2>
+                    <section id="panel3" aria-labelledby="btn3" hidden>
+                        <p class="answer">Microplastics are pieces of plastic smaller than 5 millimeters. They form when larger items break down, and they also wash off clothing and out of cosmetics. Small sea creatures eat them, and they move up the food chain - all the way to our plates.</p>
+                    </section>
+                </div>
+
+                <div>
+                    <h2 class="question">
+                        <button id="btn4" type="button" aria-expanded="false" aria-controls="panel4">What can I do to help?</button>
+                    </h2>
+                    <section id="panel4" aria-labelledby="btn4" hidden>
+                        <p class="answer">Start with small choices: use fewer single-use plastics, reuse bags, bottles, and containers, dispose of plastic responsibly, pick up plastic when you see it, and think before you buy. Multiplied by millions of people, small choices become an ocean-sized change - you can take the pledge on our home page.</p>
+                    </section>
+                </div>
+
+                <div>
+                    <h2 class="question">
+                        <button id="btn5" type="button" aria-expanded="false" aria-controls="panel5">Is Animals vs. Plastic a real organization?</button>
+                    </h2>
+                    <section id="panel5" aria-labelledby="btn5" hidden>
+                        <p class="answer">No - Animals vs. Plastic is a student project, created for a Web Development class at Glendale Community College. It is an educational website built to raise awareness about ocean plastic, not a charity.</p>
+                    </section>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="footer-content">
+                <div class="footer-top">
+                    <p class="footer-tagline">
+                        <span>Small Choices. Ocean-Sized</span>
+                        <span>Change.</span>
+                    </p>
+                    <div class="footer-giant">
+                        <p class="footer-thanks">THANK</p>
+                        <p class="footer-note">A STUDENT PROJECT FOR OUR OCEANS</p>
+                        <p class="footer-you">YOU</p>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <div class="footer-contact">
+                        <p class="footer-questions">
+                            <span>Questions About The Project?</span>
+                            <span>Let's Get In Touch.</span>
+                        </p>
+                        <form class="footer-form" id="footer-form">
+                            <label class="visually-hidden" for="footer-email">Email</label>
+                            <input type="email" id="footer-email" placeholder="Email">
+                            <button type="submit" class="footer-arrow" aria-label="Send email">→</button>
+                        </form>
+                        <p class="footer-msg" id="footer-msg" aria-live="polite"></p>
+                    </div>
+                    <a href="#top" class="back-to-top">Back To Top <span aria-hidden="true">↕</span></a>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
